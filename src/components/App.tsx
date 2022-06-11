@@ -14,7 +14,7 @@ import "../styles/App.css";
 const XLSX = _XLSX;
 const parseAB = (ab: ArrayBuffer): WorkBook | Error => {
   try {
-    return ((globalThis as any).XLSX as typeof XLSX).read(ab, { WTF: true, dense: true });
+    return ((globalThis as any).XLSX as typeof XLSX).read(ab, { WTF: true, dense: true, cellDates: true });
   } catch(e) { return e instanceof Error ? e : new Error(e as any); }
 }
 
@@ -43,7 +43,7 @@ function getRowsCols(
   rows: Row[];
   columns: Column[];
 } {
-  const rows: Row[] = utils.sheet_to_json(data[sheetName], {header:1});
+  const rows: Row[] = utils.sheet_to_json(data[sheetName], {header:1, raw: false});
   let columns: Column[] = [];
 
   for (let row of rows) {
