@@ -1,6 +1,205 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="canonical" href="https://sheetjs.com/modify/"><link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://sheetjs.com/favico/ios-57x57.png"/><link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://sheetjs.com/favico/ios-114x114.png"/><link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://sheetjs.com/favico/ios-72x72.png"/><link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://sheetjs.com/favico/ios-144x144.png"/><link rel="apple-touch-icon-precomposed" sizes="60x60" href="https://sheetjs.com/favico/ios-60x60.png"/><link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://sheetjs.com/favico/ios-120x120.png"/><link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://sheetjs.com/favico/ios-76x76.png"/><link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://sheetjs.com/favico/ios-152x152.png"/><link rel="icon" type="image/png" href="https://sheetjs.com/favico/favicon-196x196.png" sizes="196x196"/><link rel="icon" type="image/png" href="https://sheetjs.com/favico/favicon-96x96.png" sizes="96x96"/><link rel="icon" type="image/png" href="https://sheetjs.com/favico/favicon-32x32.png" sizes="32x32"/><link rel="icon" type="image/png" href="https://sheetjs.com/favico/favicon-16x16.png" sizes="16x16"/><link rel="icon" type="image/png" href="https://sheetjs.com/favico/favicon-128.png" sizes="128x128"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="SheetJS Demo"/><link rel="apple-touch-icon" href="/logo192.png"/><title>SheetJS Spreadsheet View and Modify Demo</title><link href="/static/css/main.a79f36d1.chunk.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><h3><img style="vertical-align:middle;padding-left:10px;padding-right:20px" src="https://sheetjs.com/favico/favicon-196x196.png" height="25" width="25"/><a href="https://sheetjs.com">SheetJS</a> Spreadsheet View and Modify Demo</h3><p>Use the file input element to select a spreadsheet, or drag a spreadsheet into the page. <b>Files are processed locally (in your web browser) and never leave your machine!</b></p><div id="root"></div><br/><details><summary><b>Credits</b> (click to show)</summary><p>Source code available at <a rel="nofollow noopener noreferrer" href="https://github.com/SheetJS/sheet.js.org">https://github.com/SheetJS/sheet.js.org</a>. Site is powered by the following libraries:</p><table><tr><th>Library</th><th>Purpose</th></tr><tr><td>SheetJS Community Edition</td><td>Reading and writing files</td></tr><tr><td>React</td><td>Front-end Framework</td></tr><tr><td>React Data Grid</td><td>Table editor</td></tr><tr><td>React Spinners</td><td>Loading icon</td></tr><tr><td>React useWorker</td><td>Web Worker hook</td></tr><tr><td>SweetAlert2</td><td>Messages</td></tr><tr><td>React Dropzone</td><td>Drag and Drop</td></tr></table></details><script type="application/ld+json">{
-        "@context": "http://schema.org",
-        "@type": "Organization",
-        "url": "https://sheet.js.org",
-        "logo": "https://sheetjs.com/sketch1024.png"
-      }</script><script type="text/javascript">var _gaq=_gaq||[];_gaq.push(["_setAccount","UA-36810333-1"]),_gaq.push(["_setDomainName","sheetjs.com"]),_gaq.push(["_setAllowLinker",!0]),_gaq.push(["_trackPageview"]),function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src=("https:"==document.location.protocol?"https://ssl":"http://www")+".google-analytics.com/ga.js";var e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e)}()</script><script>!function(e){function r(r){for(var n,f,i=r[0],l=r[1],a=r[2],p=0,s=[];p<i.length;p++)f=i[p],Object.prototype.hasOwnProperty.call(o,f)&&o[f]&&s.push(o[f][0]),o[f]=0;for(n in l)Object.prototype.hasOwnProperty.call(l,n)&&(e[n]=l[n]);for(c&&c(r);s.length;)s.shift()();return u.push.apply(u,a||[]),t()}function t(){for(var e,r=0;r<u.length;r++){for(var t=u[r],n=!0,i=1;i<t.length;i++){var l=t[i];0!==o[l]&&(n=!1)}n&&(u.splice(r--,1),e=f(f.s=t[0]))}return e}var n={},o={1:0},u=[];function f(r){if(n[r])return n[r].exports;var t=n[r]={i:r,l:!1,exports:{}};return e[r].call(t.exports,t,t.exports,f),t.l=!0,t.exports}f.m=e,f.c=n,f.d=function(e,r,t){f.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},f.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},f.t=function(e,r){if(1&r&&(e=f(e)),8&r)return e;if(4&r&&"object"==typeof e&&e&&e.__esModule)return e;var t=Object.create(null);if(f.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:e}),2&r&&"string"!=typeof e)for(var n in e)f.d(t,n,function(r){return e[r]}.bind(null,n));return t},f.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return f.d(r,"a",r),r},f.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},f.p="/";var i=this["webpackJsonpreact-modify-demo"]=this["webpackJsonpreact-modify-demo"]||[],l=i.push.bind(i);i.push=r,i=i.slice();for(var a=0;a<i.length;a++)r(i[a]);var c=l;t()}([])</script><script src="/static/js/2.f7d8cce9.chunk.js"></script><script src="/static/js/main.577bd699.chunk.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>SheetJS</title>
+		<meta name='viewport' content='width=device-width, initial-scale=1'>
+		<meta name='HandheldFriendly' content='true'>
+		<meta name='apple-mobile-web-app-capable' content='yes'>
+		<meta name='apple-mobile-web-app-status-bar-style' content='black'>
+		<meta name='description' content='SheetJS Tools for Excel Spreadsheets'>
+		<meta name='keywords' content='sheetjs excel spreadsheet data table javascript'>
+		<meta property='og:type' content='website'>
+		<meta property='og:title' content='SheetJS'>
+		<meta property='og:image' content='https://sheetjs.com/sketch256.png'>
+		<meta property='og:url' content='https://sheetjs.com/'>
+		<meta property='og:description' content='SheetJS Tools for Excel Spreadsheets'>
+		<meta name='twitter:card' content='summary'>
+		<meta name='twitter:site' content='@SheetJS'>
+		<meta name='twitter:title' content='SheetJS'>
+		<meta name='twitter:description' content='SheetJS Tools for Excel Spreadsheets'>
+		<meta name='twitter:image' content='sketch256.png'>
+		<link rel='manifest' href='manifest.webmanifest'>
+		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="favico/ios-57x57.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="favico/ios-114x114.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="favico/ios-72x72.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="favico/ios-144x144.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="60x60" href="favico/ios-60x60.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="120x120" href="favico/ios-120x120.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="76x76" href="favico/ios-76x76.png" />
+		<link rel="apple-touch-icon-precomposed" sizes="152x152" href="favico/ios-152x152.png" />
+		<link rel="icon" type="image/png" href="favico/favicon-196x196.png" sizes="196x196" />
+		<link rel="icon" type="image/png" href="favico/favicon-96x96.png" sizes="96x96" />
+		<link rel="icon" type="image/png" href="favico/favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="favico/favicon-16x16.png" sizes="16x16" />
+		<link rel="icon" type="image/png" href="favico/favicon-128.png" sizes="128x128" />
+		<meta name="application-name" content="SheetJS">
+		<meta name="theme-color" content="#ffffff">
+		<meta name="msapplication-TileColor" content="#FFFFFF">
+		<meta name="msapplication-TileImage" content="favico/mstile-144x144.png">
+		<meta name="msapplication-square70x70logo" content="favico/mstile-70x70.png">
+		<meta name="msapplication-square150x150logo" content="favico/mstile-150x150.png">
+		<meta name="msapplication-wide310x150logo" content="favico/mstile-310x150.png">
+		<meta name="msapplication-square310x310logo" content="favico/mstile-310x310.png">
+		<style>
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	width: 100vw;
+	font-size: 16px;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	background: white;
+	color: black;
+}
+
+body {
+	padding-top: 50px;
+}
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 50px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	z-index: 10;
+	background: white;
+	user-select: none;
+	box-shadow: 0 -5px 15px 0 #ced4da;
+	user-select: none;
+}
+
+.header-item {
+	font-weight: bold;
+	color: black;
+	opacity: 0.45;
+	cursor: pointer;
+	margin-right: 20px;
+	padding: 10px;
+	text-decoration: none;
+}
+
+.header-item:first-child {
+	margin-left: 20px;
+}
+
+.header-item:hover {
+	opacity: 0.6;
+}
+
+.active {
+	opacity: 1;
+}
+
+.page {
+	position: relative;
+	width: 100vw;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: center;
+	text-align: center;
+	padding: 20px;
+}
+
+.space {
+	width: 100%;
+	height: 10px;
+}
+
+.divider {
+	width: 200px;
+	height: 0px;
+	border-bottom: 1px solid black;
+}
+
+.title {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.subtitle {
+	font-style: italic;
+}
+
+.text {
+	color: #181818;
+}
+
+.button {
+	min-width: 140px;
+	height: 40px;
+	border: 1px solid black;
+	padding: 10px;
+	font-size: 14px;
+	background: white;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	color: black;
+	user-select: none;
+	background: rgba(89, 201, 213, 0.25);
+	border-radius: 20px;
+	display: inline-block;
+}
+
+.container {
+	max-width: 840px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-content: center;
+	align-items: flex-start;
+}
+
+.container-item {
+	width: 280px;
+}
+		</style>
+	</head>
+	<body>
+		<div class='page'>
+			<img alt='SheetJS Logo' src='https://sheetjs.com/sketch128.png' width='128px' height='128px'>
+			<div class='space'></div>
+			<div class='title'>SheetJS</div>
+			<div class='subtitle'>Spreadsheets simplified</div>
+			<div class='text'>Read, edit, and export spreadsheets</div>
+			<div class='text'>Works in web browsers and servers</div>
+			<div class='text'>Trusted by Microsoft in Office 365</div>
+			<div class='space'></div>
+			<div class='space'></div>
+			<a class='button' href='https://sheetjs.com' target='_blank' rel="noopener">Visit SheetJS.com</a>
+		</div>
+		<script type="application/ld+json">
+{
+	"@context": "http://schema.org",
+	"@type": "Organization",
+	"url": "https://sheetjs.com",
+	"logo": "https://sheetjs.com/sketch1024.png"
+}
+		</script>
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-36810333-1']);
+			_gaq.push(['_setDomainName', 'sheetjs.com']);
+			_gaq.push(['_setAllowLinker', true]);
+			_gaq.push(['_trackPageview']);
+			(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+	</body>
+</html>
